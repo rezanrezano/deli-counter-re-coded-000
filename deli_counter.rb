@@ -1,8 +1,14 @@
 # Write your code here.
 def line(katz_deli)
+if katz_deli.empty?
   puts "The line is currently empty."
-def line(other_deli)
-  puts "The line is currently: 1. Logan 2. Avi 3. Spencer"
+else
+  str="The line is currently:" #1. Logan 2. Avi 3. Spencer
+  katz_deli.each_with_index do |name,index|
+  str+=" #{index+1}. #{name}"
+
+end
+puts str
 end
 end
 def take_a_number(katz_deli,name)
